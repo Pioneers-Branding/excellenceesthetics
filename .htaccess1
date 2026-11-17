@@ -1,0 +1,23 @@
+# # www to non-www
+
+# RewriteEngine on
+# RewriteCond %{HTTP_HOST} ^www.excellenceesthetics.com/ 
+# RewriteRule (.*) https://excellenceesthetics.com/$1 [R=301,L]
+
+# # non-www to www
+
+# RewriteEngine on
+# RewriteCond %{HTTP_HOST} ^excellenceesthetics.com
+# RewriteRule (.*) https://www.excellenceesthetics.com/$1 [R=301,L]
+
+# http to https
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+</IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# This domain inherits the “PHP” package.
+# php -- END cPanel-generated handler, do not edit
