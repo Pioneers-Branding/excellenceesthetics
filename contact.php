@@ -347,7 +347,7 @@
             <div class="ee-panel ee-form">
               <span class="ee-eyebrow">Book an appointment</span>
               <h2 class="mb-4">Send us a message</h2>
-              <form id="book2" name="google-sheet2">
+              <form accept-charset='UTF-8' action='https://app.formester.com/forms/tlXWX4zZ0/submissions' method='POST'>
                 <div class="row">
                   <div class="col-md-6">
                     <div class="form-group">

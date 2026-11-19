@@ -122,45 +122,6 @@
   <script src="assets/js/plugins/slick.min.js"></script>
   <script src="assets/js/plugins/ion.rangeSlider.min.js"></script>
 
-    <script>
-            const scriptURLs = 'https://script.google.com/macros/s/AKfycbzd_fMnj24KDDiHWp2G1fMye1GsznEAjDRDkVMcM7UGQCs0NeD_Mg0fJwv3TGMrS1aMSQ/exec'
-            const formm = document.forms['google-sheet']
-          
-            formm.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURLs, { method: 'POST', body: new FormData(formm)})
-                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
-                .catch(error => console.error('Error!', error.message))
-            })
-        </script>
-        
-<script type="text/javascript">
-          
-       //we have to use ajax here to send the data on email after submited so we have to put the jquery cdn in head tag
-    var frm = $('#book-appointment');
-
-    frm.submit(function (e) {
-
-        e.preventDefault();
-
-        $.ajax({
-            type: "post",
-            url: "../book-app-send-us.php",
-            data: frm.serialize(),
-            success: function (data) {
-                console.log('Submission was successful.');
-                console.log(data);
-                window.location='../thankyou.php';
-            },
-            error: function (data) {
-                console.log('An error occurred.');
-                console.log(data);
-                
-            },
-        });
-    });
-    
-</script>
 
   <!-- Tilakam Scripts -->
   <script src="assets/js/main.js"></script>

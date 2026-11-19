@@ -117,7 +117,7 @@
             <div class="sidebar-widget widget-newsletter">
                   <h5 class="widget-title">Book an Appointment</h5>
               <div class="sigma_contact-form" style="padding:0px;">
-              <form id="book-appointment" name="google-sheet">
+              <form accept-charset='UTF-8' action='https://app.formester.com/forms/tlXWX4zZ0/submissions' method='POST'>
                 <div class="form-group">
                   <!--<label>Full Name</label>-->
                   <input type="text" placeholder="Your Name" class="form-control" name="name" required>

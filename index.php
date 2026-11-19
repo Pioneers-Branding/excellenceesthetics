@@ -584,7 +584,7 @@
           
           <div class="col-md-12">
             <div class="sigma_contact-form">
-              <form id="book-appointment" name="google-sheet">
+              <form accept-charset='UTF-8' action='https://app.formester.com/forms/tlXWX4zZ0/submissions' method='POST'>
                 <div class="form-group">
                   <label>Full Name</label>
                   <input type="text" placeholder="Your Name" class="form-control" name="name" required>
